@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="@color/black">
+    <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Hello World!"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1"
+    android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/result_field"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:textColor="@color/white"
+            android:gravity="end"
+            android:textSize="30sp"
+            android:ellipsize="start"
+            android:text=""
+            android:singleLine="true"
+            />
+</LinearLayout>
+
+<LinearLayout
+android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="3"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <TextView
+            android:text="C"
+            android:id="@+id/clear_result_btn"
+            style="@style/Operations">
+        </TextView>
+
+        <TextView
+            android:text="+/-"
+            android:id="@+id/reverse_btn"
+            style="@style/Operations">
+        </TextView>
+
+        <TextView
+            android:text="%"
+            android:id="@+id/percent_btn"
+            style="@style/Operations">
+        </TextView>
+
+        <TextView
+            android:text="/"
+            android:id="@+id/div_btn"
+            style="@style/Operations">
+        </TextView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <TextView
+            android:text="7"
+            android:id="@+id/btn_7"
+            style="@style/Numbers">
+        </TextView>
+
+        <TextView
+            android:text="8"
+            android:id="@+id/btn_8"
+            style="@style/Numbers">
+        </TextView>
+
+        <TextView
+            android:text="9"
+            android:id="@+id/btn_9"
+            style="@style/Numbers">
+        </TextView>
+
+        <TextView
+            android:text="*"
+            android:id="@+id/mult_btn"
+            style="@style/Operations">
+        </TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <TextView
+            android:text="4"
+            android:id="@+id/btn_4"
+            style="@style/Numbers">
+        </TextView>
+
+        <TextView
+            android:text="5"
+            android:id="@+id/btn_5"
+            style="@style/Numbers">
+        </TextView>
+
+        <TextView
+            android:text="6"
+            android:id="@+id/btn_6"
+            style="@style/Numbers">
+        </TextView>
+
+        <TextView
+            android:text="-"
+            android:id="@+id/substr_btn"
+            style="@style/Operations">
+        </TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <TextView
+            android:text="1"
+            android:id="@+id/btn_1"
+            style="@style/Numbers">
+        </TextView>
+
+        <TextView
+            android:text="2"
+            android:id="@+id/btn_2"
+            style="@style/Numbers">
+        </TextView>
+
+        <TextView
+            android:text="3"
+            android:id="@+id/btn_3"
+            style="@style/Numbers">
+        </TextView>
+
+        <TextView
+            android:text="+"
+            android:id="@+id/sum_btn"
+            style="@style/Operations">
+        </TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <TextView
+            android:text="0"
+            android:id="@+id/btn_0"
+            style="@style/Numbers"
+            android:layout_weight="2">
+        </TextView>
+
+        <TextView
+            android:text="."
+            android:id="@+id/btn_point"
+            style="@style/Numbers">
+        </TextView>
+
+        <TextView
+            android:text="="
+            android:id="@+id/result_btn"
+            style="@style/Operations">
+        </TextView>
+    </LinearLayout>
+
+
+    </LinearLayout>
+
+  </LinearLayout>
